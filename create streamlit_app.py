@@ -20,6 +20,22 @@ nodes = [
   Node(id="Pandas", label="Pandas", color="#2471a3"),
   Node(id="StatsModels", label="StatsModels", color="#28b463"),
   Node(id="Power BI", label="Power BI", color="#b7950b"),
-  Node(id="Tableu", label="Tableu", color="#28b463"),
-  Node(id="StatsModels", label="StatsModels", color="#b7950b")
+  Node(id="Tableu", label="Tableu", color="#28b463")
+]
+
+
+edges = [
+  Edge (source="Data Science Tools", target="Collection"),
+  Edge (source="Data Science Tools", target="Cleaning"),
+  Edge (source="Data Science Tools", target="EDA"),
+  Edge (source="Data Science Tools", target="Model Building"),
+  Edge (source="Data Science Tools", target="Model Deployment"),
+  Edge (source="Collection", target="SQL"),
+  Edge (source="", target="Scrapy"),
+  Edge (source="", target="Python"),
+  Edge (source="Cleaning", target="OpenRefine"),
+  Edge (source="EDA", target="Pandas"),
+  Edge (source="Model Building", target="StatsModels"),
+  Edge (source="Model Deployment", target="Power BI"),
+  Edge (source="Model Deployment", target="Tableu")
 ]
