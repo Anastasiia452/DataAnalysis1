@@ -63,8 +63,8 @@ config = Config(
   zoom=1.2 # Adjust as needed
 )
 
-  resources = {
-    "SQL": {"Links": [https://w3schoolsua.github.io/sql/index.html#gsc.tab=0]},
+resources = {
+    "SQL": {"Links": [https://w3schoolsua.github.io]},
     "Scrapy": {"Links": [https://scrapy.org]},
     "Python": {"Links": [https://www.python.org]},
     "OpenRefine": {"Links": [https://openrefine.org]},
