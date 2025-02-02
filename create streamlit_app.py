@@ -39,3 +39,26 @@ edges = [
   Edge (source="Model Deployment", target="Power BI"),
   Edge (source="Model Deployment", target="Tableu")
 ]
+
+config = Config(
+  width=900,
+  height=900,
+  directed=True,
+  nodeHightlightBehaviour=True,
+  hightlightColor="#b70b3d",
+  collapsible=False,
+  node={'labelProperty': 'label'},
+  link={'labelProperty': 'label', 'renderLabel': False},
+  hierarchical=True,
+  layout={
+    "hierarchical": {
+      "enabled": True,
+      "levelSeparation": 150,
+      "nodeSpacing": 100,
+      "treeSpacing": 200,
+      "direction": "UD", # UD for top to bottom
+      "sortMethod": "directed"
+    }
+  }
+  zoom=1.2 # Adjust as needed
+)
